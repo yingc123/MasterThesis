@@ -22,4 +22,4 @@ Code is partly developed on the basis of the preliminary work by Dennis Eschweil
 </p>
 
 ## Smoothing
-Smoothing idea was based on the concept Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/))
+Smoothing idea is based on the concept Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/))
