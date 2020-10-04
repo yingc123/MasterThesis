@@ -10,7 +10,7 @@ We proposed a method combining **convolution neural network** and **spatiotempor
 ### *Arabidopsis Theliana* & *Drosophila Melanogaster*
 There are two kinds of 4D embryo datasets used in this thesis. One is *Arabidopsis thaliana* (thale cress), it is densely filled inside and thus only has the outer boundary. The other one is *Drosophila melanogaster* (fruit fly), it is hollow inside and has both inner and outer boundaries.
 
-Following is the *Arabidopsis* embryos datasets in different time frame.
+Following is the *Arabidopsis* embryos datasets in different time frames.
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_growth.png)
 
 This image shows the segmentation process.
