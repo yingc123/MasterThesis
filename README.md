@@ -7,7 +7,7 @@ We proposed a method combining convolution neural network and spatiotemporal smo
 
 ## Preprocessing (Ground Truth generation for *Drosophila Melanogaster*)
 Manual Masking for cropped 3D Images: https://github.com/stegmaierj/CellShapeAnalysis/tree/master/MaskGeneration
-[Semi-Automatic Generation of Tight Binary Masks and Non-Convex Isosurfaces for Quantitative Analysis of 3D Biological Samples](https://arxiv.org/abs/2001.11469)
+Semi-Automatic Generation of Tight Binary Masks and Non-Convex Isosurfaces for Quantitative Analysis of 3D Biological Samples([paper link](https://arxiv.org/abs/2001.11469))
 
 ## 2D U-net as baseline
 Unet implementation in Tensorflow+keras: https://github.com/zhixuhao/unet
