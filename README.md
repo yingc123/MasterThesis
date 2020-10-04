@@ -9,7 +9,7 @@ We proposed a method combining convolution neural network and spatiotemporal smo
 Manual Masking for cropped 3D Images: https://github.com/stegmaierj/CellShapeAnalysis/tree/master/MaskGeneration
 Semi-Automatic Generation of Tight Binary Masks and Non-Convex Isosurfaces for Quantitative Analysis of 3D Biological Samples ([paper link](https://arxiv.org/abs/2001.11469))
 
-## [2D U-net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) as baseline
+## 2D [U-net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) as baseline
 U-net implementation in Tensorflow+keras: https://github.com/zhixuhao/unet
 <p align="center">
   <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/2D/u-net-architecture.png">
