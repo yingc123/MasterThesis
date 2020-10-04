@@ -6,6 +6,11 @@ We proposed a method combining **convolution neural network** and **spatiotempor
 
 
 ## Datasets 
+
+### *Arabidopsis Theliana* & *Drosophila Melanogaster*
+There are two kinds of 4D embryo datasets used in this thesis. One is *Arabidopsis thaliana* (thale cress), it is densely filled inside and thus only has the outer boundary. The other one is *Drosophila melanogaster* (fruit fly), it is hollow inside and has both inner and outer boundaries.
+
+
 ### Ground Truth generation for *Drosophila Melanogaster*
 Manual Masking for cropped 3D Images: https://github.com/stegmaierj/CellShapeAnalysis/tree/master/MaskGeneration
 Semi-Automatic Generation of Tight Binary Masks and Non-Convex Isosurfaces for Quantitative Analysis of 3D Biological Samples ([paper link](https://arxiv.org/abs/2001.11469))
