@@ -2,18 +2,19 @@
 
 We proposed a method combining **convolution neural network** and **spatiotemporal smoothing techniques** used for semantic segmentation of the 4D *Drosophila* and *Arabidopsis* embryos datasets. The method, 3D U-net + STP, segments the background from the foreground regions for a temporal sequence of volumetric images, it can automatically analyze large scale datasets and replace the currently manually performed masking steps. Furthermore, the generated masks of 3D U-net +STP are smoothly changing in both the spatial and temporal domains.
 
-Following is the *Arabidopsis* embryos datasets in different time frame.
-![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/3dunet_smoothing.png)
-
-This image shows the segmentation process.
-![*Arabidopsis* embyro segmentation](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_process.png)
+![3D U-net + STP (spatiotemporal postprocessing)](https://github.com/yingc123/MasterThesis/blob/master/3dunet_smoothing.png)
 
 
 ## Datasets 
 
 ### *Arabidopsis Theliana* & *Drosophila Melanogaster*
 There are two kinds of 4D embryo datasets used in this thesis. One is *Arabidopsis thaliana* (thale cress), it is densely filled inside and thus only has the outer boundary. The other one is *Drosophila melanogaster* (fruit fly), it is hollow inside and has both inner and outer boundaries.
-![3D U-net + STP (spatiotemporal postprocessing)](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_growth.png)
+
+Following is the *Arabidopsis* embryos datasets in different time frame.
+![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_growth.png)
+
+This image shows the segmentation process.
+![*Arabidopsis* embyro segmentation](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_process.png)
 
 ### Ground Truth generation for *Drosophila Melanogaster*
 Manual Masking for cropped 3D Images: https://github.com/stegmaierj/CellShapeAnalysis/tree/master/MaskGeneration
