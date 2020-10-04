@@ -11,7 +11,7 @@ Semi-Automatic Generation of Tight Binary Masks and Non-Convex Isosurfaces for Q
 
 ## 2D U-net as baseline
 U-net implementation in Tensorflow+keras: https://github.com/zhixuhao/unet
-![U-net](https://github.com/yingc123/MasterThesis/blob/master/2D/u-net-architecture.png)
+![U-net](https://github.com/yingc123/MasterThesis/blob/master/2D/u-net-architecture.png=250x250)
 
 ## 3D U-net
 Code is partly developed on the basis of the preliminary work by Dennis Eschweiler ([paper link](https://ieeexplore.ieee.org/document/8759242))
