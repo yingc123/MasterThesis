@@ -17,4 +17,4 @@ Code is partly developed on the basis of the preliminary work by Dennis Eschweil
 [paper link](https://ieeexplore.ieee.org/document/8759242)
 
 ## Smoothing
-Idea was based on the idea Surface of Interest[paper](https://www.nature.com/articles/nmeth.3648/)
+Idea was based on the idea Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/)_
