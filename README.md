@@ -13,8 +13,10 @@ There are two kinds of 4D embryo datasets used in this thesis. One is *Arabidops
 Following is the *Arabidopsis* embryos datasets in different time frames.
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_growth.png)
 
-This image shows the segmentation process.
+These images represent the segmentation process.
 ![*Arabidopsis* embyro segmentation](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_process.png)
+
+![*Drosophila* embyro segmentation](https://github.com/yingc123/MasterThesis/blob/master/Datasets/dro_process.png)
 
 ### Ground Truth generation for *Drosophila Melanogaster*
 Manual Masking for cropped 3D Images: https://github.com/stegmaierj/CellShapeAnalysis/tree/master/MaskGeneration
