@@ -13,7 +13,7 @@ There are two kinds of 4D embryo datasets used in this thesis. One is *Arabidops
 Following is the *Arabidopsis* embryos datasets in different time frames.
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_growth.png)
 
-These images represent the segmentation process.
+These images represent the segmentation types.
 ![*Arabidopsis* embyro segmentation](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_process.png)
 
 ![*Drosophila* embyro segmentation](https://github.com/yingc123/MasterThesis/blob/master/Datasets/dro_process.png)
