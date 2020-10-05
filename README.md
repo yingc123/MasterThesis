@@ -14,8 +14,10 @@ Following is the *Arabidopsis* embryos datasets in different time frames.
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_growth.png)
 
 These images represent the segmentation types.
+*Arabidopsis*
 ![*Arabidopsis* embyro segmentation](https://github.com/yingc123/MasterThesis/blob/master/Datasets/arabi_process.png)
 
+*Drosophila*
 ![*Drosophila* embyro segmentation](https://github.com/yingc123/MasterThesis/blob/master/Datasets/dro_process.png)
 
 ### Ground Truth generation for *Drosophila Melanogaster*
