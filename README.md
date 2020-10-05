@@ -30,6 +30,7 @@ Code is partly adapted from https://github.com/zhixuhao/unet
 <p align="center">
   <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/2D/u-net-architecture.png">
 </p>
+data are augmented in several ways, rotation, mirroring, shift, shear, and zoom, thus few training samples are needed to teach the U-net and produce robust result.
 
 ## [3D U-net](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49)
 Code is partly developed on the basis of the preliminary work by Dennis Eschweiler ([paper link](https://ieeexplore.ieee.org/document/8759242))
