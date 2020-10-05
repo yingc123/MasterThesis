@@ -5,6 +5,25 @@ We proposed a method combining **convolution neural network** and **spatiotempor
 ![3D U-net + STP (spatiotemporal postprocessing)](https://github.com/yingc123/MasterThesis/blob/master/3dunet_smoothing.png)
 
 
+
+## 2D [U-net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) as baseline
+Code is partly adapted from [Git](https://github.com/zhixuhao/unet)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/2D/u-net-architecture.png">
+</p>
+
+Data are augmented in several ways, rotation, mirroring, shift, shear, and zoom, thus few training samples are needed to teach the U-net and produce robust result.
+The [weighted cross-entropy](https://link.springer.com/article/10.1007/s10462-020-09854-1) and [Dice coefficient](https://link.springer.com/article/10.1007/s10462-020-09854-1) are used as loss function and metric, the weighted crossentropy is critical for the unbalanced images learning, the Dice coefficient is used to gauge the similarity of two samples.
+
+## [3D U-net](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49)
+Code is partly developed on the basis of the preliminary work by Dennis Eschweiler ([paper link](https://ieeexplore.ieee.org/document/8759242))
+<p align="center">
+  <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/3D/3dunet.png">
+</p>
+
+## Smoothing
+Smoothing idea is based on the concept Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/))
+
 ## Datasets 
 
 ### *Arabidopsis Theliana* & *Drosophila Melanogaster*
@@ -25,21 +44,3 @@ These images represent the segmentation types.
 Manual Masking for cropped 3D Images: [Matlab](https://github.com/stegmaierj/CellShapeAnalysis/tree/master/MaskGeneration)
 
 Semi-Automatic Generation of Tight Binary Masks and Non-Convex Isosurfaces for Quantitative Analysis of 3D Biological Samples ([paper link](https://arxiv.org/abs/2001.11469))
-
-## 2D [U-net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) as baseline
-Code is partly adapted from [Git](https://github.com/zhixuhao/unet)
-<p align="center">
-  <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/2D/u-net-architecture.png">
-</p>
-
-Data are augmented in several ways, rotation, mirroring, shift, shear, and zoom, thus few training samples are needed to teach the U-net and produce robust result.
-The [weighted cross-entropy](https://link.springer.com/article/10.1007/s10462-020-09854-1) and [Dice coefficient](https://link.springer.com/article/10.1007/s10462-020-09854-1) are used as loss function and metric, the weighted crossentropy is critical for the unbalanced images learning, the Dice coefficient is used to gauge the similarity of two samples.
-
-## [3D U-net](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49)
-Code is partly developed on the basis of the preliminary work by Dennis Eschweiler ([paper link](https://ieeexplore.ieee.org/document/8759242))
-<p align="center">
-  <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/3D/3dunet.png">
-</p>
-
-## Smoothing
-Smoothing idea is based on the concept Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/))
