@@ -12,6 +12,8 @@ The size of the datasets is quite large, especially for 4D datasets. Thus, we do
 #### Image enhancement
 Furthermore, due to the transparency of the tissues and limited illumination requirement of the specimen, the images from microscopy might be low contrast. Some
 [image processing techniques](https://scikit-image.org/docs/dev/auto_examples/color_exposure/plot_equalize.html) can be employed to improve or adjust the contrast of the whole 3D images, like histogram equalization, contrast stretching.
+![Cross section of images](https://github.com/yingc123/MasterThesis/blob/master/Datasets/DataPreprocessing.PNG)
+
 
 ## 2D [U-net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) as baseline
 Code is partly adapted from [Git](https://github.com/zhixuhao/unet)
