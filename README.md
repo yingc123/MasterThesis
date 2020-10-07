@@ -30,8 +30,10 @@ Code is partly developed on the basis of the preliminary work by Dennis Eschweil
   <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/3D/3dunet.png">
 </p>
 The following parameters are also identical to 3D U-net: the size of the convolution operation, the max-pooling operation, and the deconvolution operation, the activation function after each layer. The difference is that we use zero-padding to ensure the output has the same size as input, just like map pixels to pixels.
-The input to the network is a sequence of grayscale images and the output of whole network architecture is the same size corresponding predicted mask. To increase the predicted accuracy and reduce computational complexity, batch normalization and seamless tiling strategy are applied so that it can work on arbitrary large volumes.
-Loss function is weighted cross-entropy loss, it is necessary for unbalanced-classes image, e.g. the boundary mask. The weights are calculated based on the percentage of the two labels in the whole patch, i.e. the weight of foreground is the ratio of the total number of pixels to foreground pixels and the same to the weight of background. Besides, a rectified linear unit (ReLu) is applied in each convolutional layer, this limits the occurrence of negative values.
+
+The input to the network is a sequence of grayscale images and the output of whole network architecture is the same size corresponding predicted mask. To increase the predicted accuracy and reduce computational complexity, **batch normalization** and seamless tiling strategy are applied so that it can work on arbitrary large volumes.
+
+Loss function is **weighted cross-entropy loss**, it is necessary for unbalanced-classes image, e.g. the boundary mask. The weights are calculated based on the percentage of the two labels in the whole patch, i.e. the weight of foreground is the ratio of the total number of pixels to foreground pixels and the same to the weight of background. Besides, a rectified linear unit (**ReLu**) is applied in each convolutional layer, this limits the occurrence of negative values.
 
 ## Denoising
 
