@@ -4,7 +4,14 @@ We proposed a method combining **convolution neural network** and **spatiotempor
 
 ![3D U-net + STP (spatiotemporal postprocessing)](https://github.com/yingc123/MasterThesis/blob/master/3dunet_smoothing.png)
 
+## Data preprocessing
 
+#### Downsampling
+The size of the datasets is quite large, especially for 4D datasets. Thus, we downscale the spatial dimension to balance the segmentation accuracy and computational complexity. We set the resolution of the cross-section of the dataset to be 256 × 256, while the depth (Z-axis) and the time axis remain unchanged.
+
+#### Image enhancement
+Furthermore, due to the transparency of the tissues and limited illumination requirement of the specimen, the images from microscopy might be low contrast. Some
+image processing techniques [78] can be employed to improve or adjust the contrast of the whole 3D images, like histogram equalization, contrast stretching.
 
 ## 2D [U-net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) as baseline
 Code is partly adapted from [Git](https://github.com/zhixuhao/unet)
