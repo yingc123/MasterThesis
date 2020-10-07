@@ -37,6 +37,10 @@ The input to the network is a sequence of grayscale images and the output of who
 Loss function is **weighted cross-entropy loss**, it is necessary for unbalanced-classes image, e.g. the boundary mask. The weights are calculated based on the percentage of the two labels in the whole patch, i.e. the weight of foreground is the ratio of the total number of pixels to foreground pixels and the same to the weight of background. Besides, a rectified linear unit (**ReLu**) is applied in each convolutional layer, this limits the occurrence of negative values.
 
 ## Denoising
+![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_1.png)
+![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_2.png)
+![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_4.png)
+
 
 ## Smoothing
 Smoothing idea is based on the concept Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/))
