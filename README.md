@@ -4,6 +4,8 @@ We proposed a method combining **convolution neural network** and **spatiotempor
 
 ![3D U-net + STP (spatiotemporal postprocessing)](https://github.com/yingc123/MasterThesis/blob/master/3dunet_smoothing.png)
 
+## Results
+
 ## Data preprocessing
 
 #### Downsampling
