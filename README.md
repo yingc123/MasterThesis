@@ -42,9 +42,9 @@ The second subsystem is named denoising, because sometimes the background pixels
 
 Standardize the input of the denoising module. Morphological transformations use [XPIWIT](https://academic.oup.com/bioinformatics/article/32/2/315/1744077).
 
-![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_2.png)
-
 The idea of denoising algorithm is to remove incorrect and unimportant pixels, and leave only the pixels that have enough information to represent whole surface.
+
+![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_2.png)
 
 Filtering these points and only leave 2 points, one for the inner boundary and the other one for the outer boundary, store the coordinate value of points with the order of increasing angle value; Finally combining all stored points for each direction and connect all slices together, we can get the denoised boundary images.
 
