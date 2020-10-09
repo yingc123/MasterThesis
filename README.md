@@ -39,14 +39,17 @@ Loss function is **weighted cross-entropy loss**, it is necessary for unbalanced
 ## Denoising
 The second subsystem is named denoising, because sometimes the background pixels are misidentified as boundary or foreground labels or just the opposite, boundary are considered as background. Due to the prior knowledge about the datasets, we can design some algorithms to reduce these inaccurate classifications.
 ![Noise removal](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_1.png)
-Standardize the input of the denoising module. 
+
+Standardize the input of the denoising module. Morphological transformations use [XPIWIT](https://academic.oup.com/bioinformatics/article/32/2/315/1744077).
 
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_2.png)
 
 
 
 ## Smoothing
+
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_4.png)
+
 Smoothing idea is based on the concept Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/))
 
 ## Datasets 
