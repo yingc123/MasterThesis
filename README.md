@@ -54,6 +54,11 @@ Smoothing idea is based on the concept Surface of Interest ([paper link](https:/
 
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_4.png)
 
+## Evaluation
+#### U-net vs. 3D U-net
+
+#### 3D U-net vs. 3D U-net + STP
+
 ## Datasets 
 
 #### *Arabidopsis Theliana* & *Drosophila Melanogaster*
