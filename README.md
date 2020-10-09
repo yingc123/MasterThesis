@@ -44,7 +44,9 @@ Standardize the input of the denoising module. Morphological transformations use
 
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_2.png)
 
+The idea of denoising algorithm is to remove incorrect and unimportant pixels, and leave only the pixels that have enough information to represent whole surface.
 
+Filtering these points and only leave 2 points, one for the inner boundary and the other one for the outer boundary, store the coordinate value of points with the order of increasing angle value; Finally combining all stored points for each direction and connect all slices together, we can get the denoised boundary images.
 
 ## Smoothing
 
