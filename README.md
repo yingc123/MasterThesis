@@ -24,7 +24,8 @@ Code is partly adapted from [Git](https://github.com/zhixuhao/unet)
 Data are augmented in several ways, rotation, mirroring, shift, shear, and zoom, thus few training samples are needed to teach the U-net and produce robust result.
 The [weighted cross-entropy](https://link.springer.com/article/10.1007/s10462-020-09854-1) and [Dice coefficient](https://link.springer.com/article/10.1007/s10462-020-09854-1) are used as loss function and metric, the weighted crossentropy is critical for the unbalanced images learning, the Dice coefficient is used to gauge the similarity of two samples.
 
-## [3D U-net](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49)
+## 3D U-net + STP
+#### [3D U-net](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49)
 Code is partly developed on the basis of the preliminary work by Dennis Eschweiler ([paper link](https://ieeexplore.ieee.org/document/8759242))
 <p align="center">
   <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/3D/3dunet.png">
@@ -36,7 +37,7 @@ The input to the network is a sequence of grayscale images and the output of who
 
 Loss function is **weighted cross-entropy loss**, it is necessary for unbalanced-classes image, e.g. the boundary mask. The weights are calculated based on the percentage of the two labels in the whole patch, i.e. the weight of foreground is the ratio of the total number of pixels to foreground pixels and the same to the weight of background. Besides, a rectified linear unit (**ReLu**) is applied in each convolutional layer, this limits the occurrence of negative values.
 
-## Denoising
+#### Denoising
 The second subsystem is named denoising, because sometimes the background pixels are misidentified as boundary or foreground labels or just the opposite, boundary are considered as background. Due to the prior knowledge about the datasets, we can design some algorithms to reduce these inaccurate classifications.
 ![Noise removal](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_1.png)
 
@@ -48,7 +49,7 @@ The idea of denoising algorithm is to remove incorrect and unimportant pixels, a
 
 Filtering these points and only leave 2 points, one for the inner boundary and the other one for the outer boundary, store the coordinate value of points with the order of increasing angle value; Finally combining all stored points for each direction and connect all slices together, we can get the denoised boundary images.
 
-## Smoothing
+#### Smoothing
 Smoothing idea is based on the concept Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/))
 
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_4.png)
