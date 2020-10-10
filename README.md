@@ -7,11 +7,18 @@ We proposed a method combining **convolution neural network** and **spatiotempor
 ## Results
 For a qualitative assessment, we employed the 3D U-net +STP on all three Drosophila samples. Fig. 5.15 to 5.17 shows the segmentation results for our three samples.
 
-![segmentation results 1](https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/1.PNG)
+<p align="center">
+  <img width="763" height="877" src="https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/1.PNG">
+</p>
 
-![segmentation results 2](https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/2.PNG)
+<p align="center">
+  <img width="770" height="874" src="https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/2.PNG">
+</p>
 
-![segmentation results 3](https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/3.PNG)
+<p align="center">
+  <img width="764" height="878" src="https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/3.PNG">
+</p>
+
 
 ## Methods
 ### Data preprocessing
