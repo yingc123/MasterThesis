@@ -87,6 +87,12 @@ spatial and temporal domain) are stored close to each other, smoothing can then 
   <img width="575" height="817" src="https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/SurfaceMap.PNG">
 </p>
 
+In image processing, the aim of smoothing is to remove noise or other fine-scale structures/rapid changes. Two techniques are employed for smoothing process in our thesis, convolution (image filtering) and linear regression.
+
+**Image filtering for spatial smoothing**: The surface map represents the location of surface pixels, applying smoothing (Sec. 2.5) to the surface map is similar as smooth the 3D surface. Limiting the location of each point according to its neighborhood points. This step is to ensure the generating surface is a smooth surface, not a rugged one.
+
+**Linear regression for temporal smoothing**: During the cellularization of blastoderm of Drosophila, the cell membranes gradually grow inward. There is a clear trend of growth in the data, with almost the same amount of growth over the same time interval, so linear regression is chosen to fit the model along time axis. A series of data points along the time axis are processed each time, and newly predicted data points are stored. After employing linear regression in the temporal domain, the smoothness between volumetric data of continuous time frames are assured.
+
 ## Evaluation
 #### U-net vs. 3D U-net
 
