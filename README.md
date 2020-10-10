@@ -5,6 +5,14 @@ We proposed a method combining **convolution neural network** and **spatiotempor
 ![3D U-net + STP (spatiotemporal postprocessing)](https://github.com/yingc123/MasterThesis/blob/master/3dunet_smoothing.png)
 
 ## Results
+For a qualitative assessment, we employed the 3D U-net +STP on all three Drosophila samples. Fig. 5.15 to 5.17 shows the segmentation results for our three samples.
+
+![segmentation results 1](https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/1.PNG)
+
+![segmentation results 2](https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/2.PNG)
+
+![segmentation results 3](https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/3.PNG)
+
 
 ## Data preprocessing
 
