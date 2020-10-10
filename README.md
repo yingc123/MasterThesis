@@ -69,9 +69,8 @@ Based on the idea, Surface of Interest ([paper link](https://www.nature.com/arti
 
 Each surface of a 3D volumetric data can be generated a surface map. Therefore, a volumetric image of *Drosophila* produces two surface maps, respectively inner surface map and outer surface map. Furthermore, different time frames correspond to different inner and outer surface maps. These surface maps can be concatenated together with increasing time frames, details in next figure.
 <p align="center">
-  <img width="700" height="500" src="https://github.com/yingc123/MasterThesis/blob/master/smoothing/smoothing_1.png">
+  <img width="484" height="360" src="https://github.com/yingc123/MasterThesis/blob/master/smoothing/smoothing_1.png">
 </p>
-![Schematic of generated surface map data](https://github.com/yingc123/MasterThesis/blob/master/smoothing/smoothing_1.png)
 
 ## Evaluation
 #### U-net vs. 3D U-net
