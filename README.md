@@ -53,7 +53,7 @@ The second subsystem is named denoising, because sometimes the background pixels
 
 Standardize the input of the denoising module. Morphological transformations use [XPIWIT](https://academic.oup.com/bioinformatics/article/32/2/315/1744077).
 
-The idea of denoising algorithm is to remove incorrect and unimportant pixels, and leave only the pixels that have enough information to represent whole surface.
+The idea of denoising algorithm is to remove incorrect and unimportant pixels, and leave only the pixels that have enough information to represent whole surface. To generate the radial lines, we used the [Bresenham’s line algorithm](https://de.wikipedia.org/wiki/Bresenham-Algorithmus).
 
 ![Filtering process](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_2.png)
 
