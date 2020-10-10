@@ -13,8 +13,8 @@ For a qualitative assessment, we employed the 3D U-net +STP on all three Drosoph
 
 ![segmentation results 3](https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/3.PNG)
 
-
-## Data preprocessing
+## Methods
+### Data preprocessing
 
 #### Downsampling
 The size of the datasets is quite large, especially for 4D datasets. Thus, we downscale the spatial dimension to balance the segmentation accuracy and computational complexity. We set the resolution of the cross-section of the dataset to be 256 × 256, while the depth (Z-axis) and the time axis remain unchanged.
@@ -25,7 +25,7 @@ Furthermore, due to the transparency of the tissues and limited illumination req
 ![Cross section of images](https://github.com/yingc123/MasterThesis/blob/master/Datasets/DataPreprocessing.PNG)
 
 
-## 2D [U-net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) as baseline
+### 2D [U-net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) as baseline
 Code is partly adapted from [Git](https://github.com/zhixuhao/unet)
 <p align="center">
   <img width="460" height="300" src="https://github.com/yingc123/MasterThesis/blob/master/2D/u-net-architecture.png">
@@ -34,7 +34,7 @@ Code is partly adapted from [Git](https://github.com/zhixuhao/unet)
 Data are augmented in several ways, rotation, mirroring, shift, shear, and zoom, thus few training samples are needed to teach the U-net and produce robust result.
 The [weighted cross-entropy](https://link.springer.com/article/10.1007/s10462-020-09854-1) and [Dice coefficient](https://link.springer.com/article/10.1007/s10462-020-09854-1) are used as loss function and metric, the weighted crossentropy is critical for the unbalanced images learning, the Dice coefficient is used to gauge the similarity of two samples.
 
-## 3D U-net + STP
+### 3D U-net + STP
 #### [3D U-net](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49)
 Code is partly developed on the basis of the preliminary work by Dennis Eschweiler ([paper link](https://ieeexplore.ieee.org/document/8759242))
 <p align="center">
