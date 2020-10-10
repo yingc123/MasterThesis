@@ -72,6 +72,10 @@ Each surface of a 3D volumetric data can be generated a surface map. Therefore, 
   <img width="484" height="360" src="https://github.com/yingc123/MasterThesis/blob/master/smoothing/smoothing_1.png">
 </p>
 
+The surface map shows dense information about the location of the surface pixels for all time frames (Fig. 4.16 separate to 2D slices along time axis). The surface
+map facilitates the observation of the variations of the surface pixels, simple to find its location in original volumetric data. More importantly, adjacent points (both in
+spatial and temporal domain) are stored close to each other, smoothing can then be applied by using the surface map data.
+
 <p align="center">
   <img width="575" height="817" src="https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/SurfaceMap.PNG">
 </p>
