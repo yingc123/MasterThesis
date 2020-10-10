@@ -63,9 +63,10 @@ Filtering these points and only leave 2 points, one for the inner boundary and t
 Based on the idea, Surface of Interest ([paper link](https://www.nature.com/articles/nmeth.3648/)), that we can map the ordered point cloud lying on a surface to a surface map according to their value in cylindrical coordinate system (See followed picture). It reduces data from 3D to 2D that decrease data size and processing time. 
 ![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_4.png)
 
-The intensity value of the 2D surface map is the distance of the surface pixels to the central line, for each slice is the distance of boundary pixels to the center. In other words, we map the surface pixels to a cylinder coordinate system and unroll the surface to a 2D map, the value of each pixels represents the distance of corresponding point to the central line.
+**The intensity value of the 2D surface map is the distance of the surface pixels to the central line, for each slice is the distance of boundary pixels to the center.** In other words, we map the surface pixels to a cylinder coordinate system and unroll the surface to a 2D map, the value of each pixels represents the distance of corresponding point to the central line.
 
-
+Each surface of a 3D volumetric data can be generated a surface map. Therefore, a volumetric image of *Drosophila* produces two surface maps, respectively inner surface map and outer surface map. Furthermore, different time frames correspond to different inner and outer surface maps. These surface maps can be concatenated together with increasing time frames, details in next figure.
+![*Arabidopsis* embyro growth](https://github.com/yingc123/MasterThesis/blob/master/smoothing/denoising_4.png)
 
 ## Evaluation
 #### U-net vs. 3D U-net
