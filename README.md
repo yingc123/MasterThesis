@@ -72,6 +72,8 @@ Each surface of a 3D volumetric data can be generated a surface map. Therefore, 
   <img width="484" height="360" src="https://github.com/yingc123/MasterThesis/blob/master/smoothing/smoothing_1.png">
 </p>
 
+![Inner and outer surface map](https://github.com/yingc123/MasterThesis/blob/master/Results%26Evaluation/SurfaceMap.PNG)
+
 ## Evaluation
 #### U-net vs. 3D U-net
 
