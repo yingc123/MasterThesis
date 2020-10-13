@@ -1,83 +1,94 @@
 
-<table>
-	<tr>
-		<td>
-			w/o Smoothing Regression+Smoothing Smoothing+Regression
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Dataset1
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Time Axis 281.66752 294.36342 294.37389
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Slice Axis 75.28298 44.44158 44.4438
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Point Axis 195.93661 87.30024 87.30207
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Total 552.88711 426.10524 426.11976
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Dataset2
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Time Axis 274.19039 216.425 216.42063
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Slice Axis 69.74792 29.54986 29.55021
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Point Axis 202.80693 48.55943 48.55816
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Total 546.74524 294.53429 294.529
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Dataset3
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Time Axis 305.60828 281.73747 281.74963
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Slice Axis 57.52826 32.92505 32.92517
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Point Axis 211.37414 112.81207 112.81266
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Total 574.51068 427.47459 427.48746
-		</td>
-	</tr>
+<table border=0 cellpadding=0 cellspacing=0 width=581 style='border-collapse:
+ collapse;table-layout:fixed;width:438pt'>
+ <col width=64 span=2 style='width:48pt'>
+ <col width=151 span=3 style='mso-width-source:userset;mso-width-alt:5282;
+ width:114pt'>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl65 width=64 style='height:14.5pt;width:48pt'>&nbsp;</td>
+  <td class=xl65 width=64 style='border-left:none;width:48pt'>&nbsp;</td>
+  <td class=xl65 width=151 style='border-left:none;width:114pt'>w/o
+  Smoothing<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-left:none;width:114pt'>Regression+Smoothing<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-left:none;width:114pt'>Smoothing+Regression</td>
+ </tr>
+ <tr height=67 style='height:50.0pt'>
+  <td height=67 class=xl65 width=64 style='height:50.0pt;border-top:none;
+  width:48pt'>Dataset1</td>
+  <td class=xl65 width=64 style='border-top:none;border-left:none;width:48pt'>Time
+  Axis <br>
+    Slice Axis <br>
+    Point Axis <br>
+    Total<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>281.66752
+  <br>
+    75.28298 <br>
+    195.93661 <br>
+    552.88711<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>294.36342
+  <br>
+    44.44158 <br>
+    87.30024 <br>
+    426.10524<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>294.37389<br>
+    44.4438<br>
+    87.30207<br>
+    426.11976</td>
+ </tr>
+ <tr height=67 style='height:50.0pt'>
+  <td height=67 class=xl65 width=64 style='height:50.0pt;border-top:none;
+  width:48pt'>Dataset2</td>
+  <td class=xl65 width=64 style='border-top:none;border-left:none;width:48pt'>Time
+  Axis <br>
+    Slice Axis <br>
+    Point Axis <br>
+    Total<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>274.19039
+  <br>
+    69.74792 <br>
+    202.80693 <br>
+    546.74524<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>216.425
+  <br>
+    29.54986 <br>
+    48.55943 <br>
+    294.53429<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>216.42063<br>
+    29.55021<br>
+    48.55816<br>
+    294.529</td>
+ </tr>
+ <tr height=67 style='height:50.0pt'>
+  <td height=67 class=xl65 width=64 style='height:50.0pt;border-top:none;
+  width:48pt'>Dataset3</td>
+  <td class=xl65 width=64 style='border-top:none;border-left:none;width:48pt'>Time
+  Axis <br>
+    Slice Axis <br>
+    Point Axis <br>
+    Total<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>305.60828
+  <br>
+    57.52826 <br>
+    211.37414 <br>
+    574.51068<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>281.73747
+  <br>
+    32.92505 <br>
+    112.81207 <br>
+    427.47459<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=151 style='border-top:none;border-left:none;width:114pt'>281.74963<br>
+    32.92517<br>
+    112.81266<br>
+    427.48746</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=151 style='width:114pt'></td>
+  <td width=151 style='width:114pt'></td>
+  <td width=151 style='width:114pt'></td>
+ </tr>
+ <![endif]>
 </table>
