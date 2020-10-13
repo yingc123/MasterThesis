@@ -95,9 +95,10 @@ In image processing, the aim of smoothing is to remove noise or other fine-scale
 
 ## Evaluation
 #### Preprocessing is essential
-| 表格      | 第一列     | 第二列     |
+| Foreground Mask | Dataset1     | Dataset2     | Dataset3     |
 | ---------- | :-----------:  | :-----------: |
-| 第一行     | 第一列     | 第二列     |
+| Original Image    | 0.98040    | 0.93348    |  0.94025    |
+
 
 #### U-net vs. 3D U-net
 
