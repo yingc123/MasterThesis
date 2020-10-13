@@ -152,7 +152,11 @@ The evaluation results are shown in last table, BF Score is used as the accuracy
 For a qualitative assessment, we employed the 3D U-net +STP on all three *Drosophila* samples. The reults part shows the segmentation results for our three samples. The
 L2 norm of the first-order derivative over space and time is used to evaluate the spatiotemporal smoothness of predicted masks.
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=Dist=\sum_{i=0}^{T-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2%2B\sum_{i=0}^{S-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2%2B\sum_{i=0}^{P-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2" style="border:none;">
+
+
+<p align="center">
+  <img src="http://chart.googleapis.com/chart?cht=tx&chl=Dist=\sum_{i=0}^{T-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2%2B\sum_{i=0}^{S-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2%2B\sum_{i=0}^{P-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2" style="border:none;">
+</p>
 
 *P* means pixels in the surface map. *T*, *S* and *P* are respectively total numbers of time frames, slices and points. The L2 norm is to measure the similarity between frames. The smaller the L2 norm is, the smoother surface masks generated are. 
 
@@ -258,6 +262,8 @@ L2 norm of the first-order derivative over space and time is used to evaluate th
 
 From table we can find that applying the spatiotemporal postprocessing can generate smoother surface masks comparing without STP for all three datasets. It limits the position of one point based on its surrounding points, the postprocessing algorithm makes the distance between adjacent points to be more uniform, see next table. Therefore, the generated masks from 3D U-net + STP are smoothly changed in both space and time domains.
 
+<div align="center">
+
 <table border=0 cellpadding=0 cellspacing=0 width=575 style='border-collapse:
  collapse;table-layout:fixed;width:430pt'>
  <col width=115 span=5 style='mso-width-source:userset;mso-width-alt:4002;
@@ -337,6 +343,8 @@ From table we can find that applying the spatiotemporal postprocessing can gener
  </tr>
  <![endif]>
 </table>
+
+</div>
 
 ## Datasets 
 
