@@ -1,12 +1,12 @@
-
-<table border=0 cellpadding=0 cellspacing=0 width=581 style='border-collapse:
- collapse;table-layout:fixed;width:438pt'>
- <col width=64 span=2 style='width:48pt'>
+<table border=0 cellpadding=0 cellspacing=0 width=611 style='border-collapse:
+ collapse;table-layout:fixed;width:460pt'>
+ <col width=79 span=2 style='mso-width-source:userset;mso-width-alt:2746;
+ width:59pt'>
  <col width=151 span=3 style='mso-width-source:userset;mso-width-alt:5282;
  width:114pt'>
  <tr height=19 style='height:14.5pt'>
-  <td height=19 class=xl65 width=64 style='height:14.5pt;width:48pt'>&nbsp;</td>
-  <td class=xl65 width=64 style='border-left:none;width:48pt'>&nbsp;</td>
+  <td height=19 class=xl65 width=79 style='height:14.5pt;width:59pt'>&nbsp;</td>
+  <td class=xl65 width=79 style='border-left:none;width:59pt'>&nbsp;</td>
   <td class=xl65 width=151 style='border-left:none;width:114pt'>w/o
   Smoothing<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=151 style='border-left:none;width:114pt'>Regression+Smoothing<span
@@ -14,9 +14,9 @@
   <td class=xl65 width=151 style='border-left:none;width:114pt'>Smoothing+Regression</td>
  </tr>
  <tr height=67 style='height:50.0pt'>
-  <td height=67 class=xl65 width=64 style='height:50.0pt;border-top:none;
-  width:48pt'>Dataset1</td>
-  <td class=xl65 width=64 style='border-top:none;border-left:none;width:48pt'>Time
+  <td height=67 class=xl65 width=79 style='height:50.0pt;border-top:none;
+  width:59pt'>Dataset1</td>
+  <td class=xl65 width=79 style='border-top:none;border-left:none;width:59pt'>Time
   Axis <br>
     Slice Axis <br>
     Point Axis <br>
@@ -37,9 +37,9 @@
     426.11976</td>
  </tr>
  <tr height=67 style='height:50.0pt'>
-  <td height=67 class=xl65 width=64 style='height:50.0pt;border-top:none;
-  width:48pt'>Dataset2</td>
-  <td class=xl65 width=64 style='border-top:none;border-left:none;width:48pt'>Time
+  <td height=67 class=xl65 width=79 style='height:50.0pt;border-top:none;
+  width:59pt'>Dataset2</td>
+  <td class=xl65 width=79 style='border-top:none;border-left:none;width:59pt'>Time
   Axis <br>
     Slice Axis <br>
     Point Axis <br>
@@ -60,9 +60,9 @@
     294.529</td>
  </tr>
  <tr height=67 style='height:50.0pt'>
-  <td height=67 class=xl65 width=64 style='height:50.0pt;border-top:none;
-  width:48pt'>Dataset3</td>
-  <td class=xl65 width=64 style='border-top:none;border-left:none;width:48pt'>Time
+  <td height=67 class=xl65 width=79 style='height:50.0pt;border-top:none;
+  width:59pt'>Dataset3</td>
+  <td class=xl65 width=79 style='border-top:none;border-left:none;width:59pt'>Time
   Axis <br>
     Slice Axis <br>
     Point Axis <br>
@@ -84,8 +84,8 @@
  </tr>
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
-  <td width=64 style='width:48pt'></td>
-  <td width=64 style='width:48pt'></td>
+  <td width=79 style='width:59pt'></td>
+  <td width=79 style='width:59pt'></td>
   <td width=151 style='width:114pt'></td>
   <td width=151 style='width:114pt'></td>
   <td width=151 style='width:114pt'></td>
