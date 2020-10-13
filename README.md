@@ -95,19 +95,20 @@ In image processing, the aim of smoothing is to remove noise or other fine-scale
 
 ## Evaluation
 #### Preprocessing is essential
+Using different preprocessing methods with 3D U-net, we can found the result is better than original images predicted result.
+Evaluation between different preprocessed images for *Drosophila melanogaster*, the evaluation metric is BF Score.
 | Foreground Mask | Dataset1     | Dataset2     | Dataset3     |
 | ---------- | :-----------:  | :-----------: |:-----------: |
 | Original Image    | 0.98040    | 0.93348    |  0.94025    |
 | Image Applied Histogram Equlization    | 0.98280    | 0.93143   | **0.94899**    |
 | Image Applied Contrast Stretching    | **0.98327**    | **0.93415**   |  0.94678   |
 
-
+Evaluation between different preprocessed image for *Arabidopsis thaliana*, the evaluation metrics are recall, precision and BF Score.
 | Boundary Thick Mask | Recall     | Precision     | BF Score     |
 | ---------- | :-----------:  | :-----------: |:-----------: |
 | Original Image    | 0.94745    | 0.79866    |  0.86632    |
 | Image Applied Histogram Equlization    | **0.95897**    | 0.76315   | 0.8496    |
 | Image Applied Contrast Stretching    | 0.94403    | **0.81586**   |  **0.87483**   |
-
 
 
 #### U-net vs. 3D U-net
