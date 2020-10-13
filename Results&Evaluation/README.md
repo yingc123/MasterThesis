@@ -1,7 +1,7 @@
 <table border=0 cellpadding=0 cellspacing=0 width=611 style='border-collapse:
  collapse;table-layout:fixed;width:460pt'>
  <col width=79 span=2 style='mso-width-source:userset;mso-width-alt:2746;
- width:59pt'>
+ width:100pt'>
  <col width=151 span=3 style='mso-width-source:userset;mso-width-alt:5282;
  width:114pt'>
  <tr height=19 style='height:14.5pt'>
