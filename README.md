@@ -125,6 +125,8 @@ The evaluation results are shown in last table, BF Score is used as the accuracy
 
 #### 3D U-net vs. 3D U-net + STP
 
+
+
 <table border=0 cellpadding=0 cellspacing=0 width=683 style='border-collapse:
  collapse;table-layout:fixed;width:516pt'>
  <col width=115 span=2 style='mso-width-source:userset;mso-width-alt:4026;
