@@ -112,7 +112,7 @@ In image processing, the aim of smoothing is to remove noise or other fine-scale
 
 #### U-net vs. 3D U-net
 
-| BF Score | Drosophila1     | Drosophila2      | Drosophila3      |  Arabidopsis      |
+|            | Drosophila1     | Drosophila2      | Drosophila3      |  Arabidopsis      |
 | ---------- | :-----------:  | :-----------: |:-----------: |:-----------: |
 | 2D U-net    | 0.98176    | **0.94778**    |  **0.96649**   | 0.85564   |
 | 3D U-net    | **0.98327**    | 0.93145   | 0.94678   | **0.87483**   |
