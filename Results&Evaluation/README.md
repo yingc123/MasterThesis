@@ -1,1 +1,3 @@
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\begin{equation}
+	Dist=\sum_{i=0}^{T-2}|p_{pred}^{i+1} - p_{pred}^i|^2 + \sum_{i=0}^{S-2}|p_{pred}^{i+1} - p_{pred}^i|^2 + \sum_{i=0}^{P-2}|p_{pred}^{i+1} - p_{pred}^i|^2 
+\end{equation}\label{eq:dist}" style="border:none;">
