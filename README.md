@@ -113,11 +113,14 @@ Evaluation between different preprocessed image for *Arabidopsis thaliana*, the 
 
 #### U-net vs. 3D U-net
 
-|            | Drosophila1     | Drosophila2      | Drosophila3      |  Arabidopsis      |
+Evaluation between 2D U-net and 3D U-net, evaluated in BF Score.
+|            | *Drosophila*1     | *Drosophila*2      | *Drosophila*3      |  *Arabidopsis*      |
 | ---------- | :-----------:  | :-----------: |:-----------: |:-----------: |
 | 2D U-net    | 0.98176    | **0.94778**    |  **0.96649**   | 0.85564   |
 | 3D U-net    | **0.98327**    | 0.93145   | 0.94678   | **0.87483**   |
+The input datasets are identical for both 2D U-net and 3D U-net, the result of 2D U-net can then be merged together to be volumetric images and evaluated with the 3D ground truth.
 
+The evaluation results are shown in last table, BF Score is used as the accuracy measure to compare ground truth volume to the predicted 3D volume. The result of 2D U-net is slightly better than 3D U-net in *Drosophila* dataset2 and dataset3. However, it is difficult for 2D U-net to generate smoothed results in space if the dataset in an unregular shape, like for *Arabidopsis*, the 3D U-net outperforms than 2D U-net.
 
 #### 3D U-net vs. 3D U-net + STP
 
