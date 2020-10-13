@@ -125,7 +125,12 @@ The evaluation results are shown in last table, BF Score is used as the accuracy
 
 #### 3D U-net vs. 3D U-net + STP
 
+For a qualitative assessment, we employed the 3D U-net +STP on all three *Drosophila* samples. The reult part shows the segmentation results for our three samples. The
+L2 norm of the first-order derivative over space and time is used to evaluate the spatiotemporal smoothness of predicted masks.
 
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=Dist=\sum_{i=0}^{T-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2%2B\sum_{i=0}^{S-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2%2B\sum_{i=0}^{P-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2" style="border:none;">
+
+*P* means pixels in the surface map. *T*, *S* and *P* are respectively total numbers of time frames, slices and points. The L2 norm is to measure the similarity between frames. The smaller the L2 norm is, the smoother surface masks generated are. 
 
 <table border=0 cellpadding=0 cellspacing=0 width=683 style='border-collapse:
  collapse;table-layout:fixed;width:516pt'>
@@ -223,6 +228,87 @@ The evaluation results are shown in last table, BF Score is used as the accuracy
  <![endif]>
 </table>
 
+From table we can find that applying the spatiotemporal postprocessing can generate smoother surface masks comparing without STP for all three datasets. It limits the position of one point based on its surrounding points, the postprocessing algorithm makes the distance between adjacent points to be more uniform, see next table. Therefore, the generated masks from 3D U-net + STP are smoothly changed in both space and time domains.
+
+<table border=0 cellpadding=0 cellspacing=0 width=575 style='border-collapse:
+ collapse;table-layout:fixed;width:430pt'>
+ <col width=115 span=5 style='mso-width-source:userset;mso-width-alt:4002;
+ width:86pt'>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl66 width=115 style='height:14.5pt;width:86pt'>Distance
+  number<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl66 width=115 style='border-left:none;width:86pt'>inner dist.<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl66 width=115 style='border-left:none;width:86pt'>outer dist.<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl66 width=115 style='border-left:none;width:86pt'>inner dist.<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl66 width=115 style='border-left:none;width:86pt'>outer dist.</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl65 style='height:14.5pt'></td>
+  <td colspan=2 class=xl67 width=230 style='border-right:.5pt solid black;
+  width:172pt'>w/o Smoothing<span style='mso-spacerun:yes'> </span></td>
+  <td colspan=2 class=xl67 width=230 style='border-right:.5pt solid black;
+  width:172pt'>Spatiotemporal Smoothing</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl66 width=115 style='height:14.5pt;width:86pt'>1</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>150.43908</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>137.64019</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>166.46412</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>127.90947</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl66 width=115 style='height:14.5pt;border-top:none;
+  width:86pt'>2</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>153.03513</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>125.26635</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>166.48918</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>127.89299</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl66 width=115 style='height:14.5pt;border-top:none;
+  width:86pt'>3</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>150.48266</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>124.60538</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>166.46455</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>127.90254</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl66 width=115 style='height:14.5pt;border-top:none;
+  width:86pt'>4</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>158.52608</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>119.58127</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>166.46688</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>127.89876</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl66 width=115 style='height:14.5pt;border-top:none;
+  width:86pt'>5</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>151.43724</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>131.13379</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>166.53568</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>127.88919</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl66 width=115 style='height:14.5pt;border-top:none;
+  width:86pt'>6</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>156.47816</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>131.3798</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>166.42547</td>
+  <td class=xl66 width=115 style='border-top:none;border-left:none;width:86pt'>127.90452</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=115 style='width:86pt'></td>
+  <td width=115 style='width:86pt'></td>
+  <td width=115 style='width:86pt'></td>
+  <td width=115 style='width:86pt'></td>
+  <td width=115 style='width:86pt'></td>
+ </tr>
+ <![endif]>
+</table>
 
 ## Datasets 
 
