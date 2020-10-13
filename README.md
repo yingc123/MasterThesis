@@ -93,6 +93,16 @@ In image processing, the aim of smoothing is to remove noise or other fine-scale
 
 **Linear regression for temporal smoothing**: During the cellularization of blastoderm of Drosophila, the cell membranes gradually grow inward. There is a clear trend of growth in the data, with almost the same amount of growth over the same time interval, so linear regression is chosen to fit the model along time axis. A series of data points along the time axis are processed each time, and newly predicted data points are stored. After employing linear regression in the temporal domain, the smoothness between volumetric data of continuous time frames are assured.
 
+Here shows results for both outer surface maps and inner surface maps, left is before smoothing and right corresponds after smoothing.
+
+<p align="center">
+  <img width="581" height="860" src="https://github.com/yingc123/MasterThesis/blob/master/smoothing/SurfaceMap1.PNG">
+</p>
+
+<p align="center">
+  <img width="585" height="853" src="https://github.com/yingc123/MasterThesis/blob/master/smoothing/SurfaceMap2.PNG">
+</p>
+
 ## Evaluation
 #### Preprocessing is essential
 Using different preprocessing methods with 3D U-net, we can found the result is better than original images predicted result.
