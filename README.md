@@ -102,6 +102,14 @@ In image processing, the aim of smoothing is to remove noise or other fine-scale
 | Image Applied Contrast Stretching    | **0.98327**    | **0.93415**   |  0.94678   |
 
 
+| Boundary Thick Mask | Recall     | Precision     | BF Score     |
+| ---------- | :-----------:  | :-----------: |:-----------: |
+| Original Image    | 0.94745    | 0.79866    |  0.86632    |
+| Image Applied Histogram Equlization    | **0.95897**    | 0.76315   | 0.8496    |
+| Image Applied Contrast Stretching    | 0.94403    | **0.81586**   |  **0.87483**   |
+
+
+
 #### U-net vs. 3D U-net
 
 #### 3D U-net vs. 3D U-net + STP
