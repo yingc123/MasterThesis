@@ -156,6 +156,8 @@ L2 norm of the first-order derivative over space and time is used to evaluate th
 
 *P* means pixels in the surface map. *T*, *S* and *P* are respectively total numbers of time frames, slices and points. The L2 norm is to measure the similarity between frames. The smaller the L2 norm is, the smoother surface masks generated are. 
 
+<div align="center">
+  
 <table border=0 cellpadding=0 cellspacing=0 width=683 style='border-collapse:
  collapse;table-layout:fixed;width:516pt'>
  <col width=115 span=2 style='mso-width-source:userset;mso-width-alt:4026;
@@ -251,6 +253,8 @@ L2 norm of the first-order derivative over space and time is used to evaluate th
  </tr>
  <![endif]>
 </table>
+
+</div>
 
 From table we can find that applying the spatiotemporal postprocessing can generate smoother surface masks comparing without STP for all three datasets. It limits the position of one point based on its surrounding points, the postprocessing algorithm makes the distance between adjacent points to be more uniform, see next table. Therefore, the generated masks from 3D U-net + STP are smoothly changed in both space and time domains.
 
