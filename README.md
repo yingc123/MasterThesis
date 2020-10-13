@@ -125,7 +125,7 @@ The evaluation results are shown in last table, BF Score is used as the accuracy
 
 #### 3D U-net vs. 3D U-net + STP
 
-For a qualitative assessment, we employed the 3D U-net +STP on all three *Drosophila* samples. The reult part shows the segmentation results for our three samples. The
+For a qualitative assessment, we employed the 3D U-net +STP on all three *Drosophila* samples. The reults part shows the segmentation results for our three samples. The
 L2 norm of the first-order derivative over space and time is used to evaluate the spatiotemporal smoothness of predicted masks.
 
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=Dist=\sum_{i=0}^{T-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2%2B\sum_{i=0}^{S-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2%2B\sum_{i=0}^{P-2}|p_{pred}^{i%2B1}-p_{pred}^i|^2" style="border:none;">
