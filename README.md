@@ -96,7 +96,7 @@ In image processing, the aim of smoothing is to remove noise or other fine-scale
 ## Evaluation
 #### Preprocessing is essential
 | Foreground Mask | Dataset1     | Dataset2     | Dataset3     |
-| ---------- | :-----------:  | :-----------: |
+| ---------- | :-----------:  | :-----------: |:-----------: |
 | Original Image    | 0.98040    | 0.93348    |  0.94025    |
 
 
